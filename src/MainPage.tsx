@@ -5,6 +5,9 @@ import logo from './logo.svg';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 
+//import img1 from '../public/static/images/message.png';
+import { Tab, TabBarItem, Article } from 'react-weui';
+
 import { Button , Collapse,
     Navbar,
     NavbarToggler,
@@ -135,6 +138,54 @@ class MainPage extends React.Component<RouteComponentProps<ILayoutProps>, ILayou
         <Button color="danger">danger</Button>{' '}
         <Button color="link">link</Button>
       </div>
+
+      <Tab type="tabbar">
+                <TabBarItem icon={<img src={'/favicon.ico'}/>} label="Tab1">
+                    <Article>
+                        <h1>Page 1</h1>
+                        <section>
+                            <h2 className="title">Heading</h2>
+                            <section>
+                                <h3>1.1 Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute</p>
+                            </section>
+                        </section>
+                    </Article>
+                </TabBarItem>
+                <TabBarItem icon={<img src={'/favicon.ico'}/>} label="Tab2">
+                    <Article>
+                        <h1>Page 2</h1>
+                        <section>
+                            <h2 className="title">Heading</h2>
+                            <section>
+                                <h3>2.1 Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute</p>
+                            </section>
+                        </section>
+                    </Article>
+                </TabBarItem>
+                <TabBarItem icon={<img src={'/favicon.ico'}/>} label="Tab3">
+                    <Article>
+                        <h1>Page 3</h1>
+                        <section>
+                            <h2 className="title">Heading</h2>
+                            <section>
+                                <h3>3.1 Title</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute</p>
+                            </section>
+                        </section>
+                    </Article>
+                </TabBarItem>
+            </Tab>
             </div>
       
           );

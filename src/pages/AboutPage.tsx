@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { Button } from 'react-weui';
+
 interface ITablePageProps {
    params:any;  
    location:any;
@@ -39,7 +41,8 @@ export default class AboutPage extends React.Component<ITablePageProps, ITablePa
     render() {
         return (
            <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
-          ...
+        
+        <Button>ddddddddddddddd</Button>
           <br />
           Really
           <br />...<br />...<br />...<br />

@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./src/ts/bootstrap.tsx",
+    entry: "./src/mobx-demo/index.tsx",
     output: {
         filename: "bundle.js",
         path: __dirname + "/public/dist"
